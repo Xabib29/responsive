@@ -1,0 +1,136 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 100px;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #202c36;
+  }
+  
+  header {
+    padding: 15px 0;
+    background-color: #2b3844;
+  }
+  
+  .header-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-left h2 {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .header-right button {
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .hero {
+    padding: 50px 0;
+  }
+  
+  .hero-input {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+    width: 480px;
+    height: 56px;
+    background-color: #2b3844;
+  }
+  
+  input {
+    height: 100%;
+    width: 100%;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  
+  input::placeholder {
+    color: white;
+  }
+
+  .germany{
+    width: 264px;
+height: 250px;
+
+border-radius: 5px;
+box-shadow: 0px 0px 7px 2px #00000008;
+background-color: #2B3844;
+color: white;
+font-family: Nunito Sans;
+font-size: 18px;
+line-height: 26px;
+text-align: center;
+
+
+  }
+  .germany p{
+    padding-top: 20px;
+  }
+  .germany img{
+    width: 100%;
+    
+  }
+  .german-parent{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+  
+  /* Media  */
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 50px;
+    }
+  
+    .header-left h2 {
+      font-size: 18px;
+    }
+  
+    .german-parent{
+        flex-wrap: wrap;
+    }
+    .hero-input {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      padding: 0 20px;
+    }
+  
+    .germany {
+        width: 100%;
+        height: auto;
+    }
+    .header-left h2 {
+      font-size: 14px;
+    }
+  
+    .header-right button {
+      font-size: 12px;
+    }
+  }
